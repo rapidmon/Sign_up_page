@@ -1,0 +1,47 @@
+/* css reset */
+
+body, p, ul, hr, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+li { 
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* css style */
+
+.head{
+    background-image: url(./images/hackmandead.png);
+    padding: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.event{
+    display: none;
+}
+
+main{
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    align-items: center;
+    margin: 20px;
+    padding: 30px 60px 60px 60px;
+}
+
+.title{
+    margin-bottom: 40px;
+    text-align: center;
+}

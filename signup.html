@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <header class="h1header">
+        <h1>Your way to save the HackMen</h1>
+    </header>
+    <main>
+        <form action="login.html" method="post">
+            <section class="inputbox">
+                <p class="inputp">ID</p>
+                <input class="enterbox" type="text" required>
+            </section>
+            <section class="inputbox">
+                <p class="inputp">Password</p>
+                <input class="enterbox" type="text" required>
+            </section>
+            <section class="inputbox">
+                <p class="inputp">Confirm Password</p>
+                <input class="enterbox" type="password" required>
+            </section>
+            <section class="inputbox">
+                <p class="inputp">Telephone Number</p>
+                <input class="enterbox" type="tel" required>
+            </section>
+            <section class="terms">
+                <span class="info">Consent to collect and use personal information. </span>
+                <a class="detail" onclick="new_window_term();">details</a>
+                <input type="checkbox">
+            </section>
+            <section class="terms event">
+                <span class="info">Consent to advertising messages. </span>
+                <a class="detail" onclick="new_window_event();">details</a>    
+                <input type="checkbox">
+            </section>
+            <button class="sub">
+                Sign Up
+            </button>
+        </form>
+    </main>
+</body>
+<script>
+    function new_window_term() {
+      window.open(
+        "terms.html",
+        "terms",
+        "width=800, height=800, top=50, left=50"
+      );
+    }
+    function new_window_event() {
+      window.open(
+        "event.html",
+        "event",
+        "width=800, height=800, top=50, left=50"
+      );
+    }
+
+</script>
+</html>

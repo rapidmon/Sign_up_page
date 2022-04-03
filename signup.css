@@ -1,0 +1,113 @@
+/* css reset */
+
+body, p, ul, hr, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+li { 
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* css style */
+
+@font-face {
+    font-family : 'SSShinb7Regular';
+    src : url(./SSShinb7Regular.ttf)
+  }  
+
+body{
+    background-image: url(./images/welcomehackman.png), url(./images/hackmandead.png);
+    background-position: left 150px top 310px, left 150px top 220px;
+    background-size: 20% auto, 20% auto;
+    background-repeat: no-repeat, no-repeat;
+}
+
+h1{
+    padding: 40px;
+}
+
+.h1header{
+    border-bottom: 5px solid;
+    border-image: url(./images/blackline.png) 20 / 20px;
+    font-family: SSShinb7Regular;
+    text-align: center;
+}
+
+main{
+    border: 30px solid;
+    width: 430px;
+    height: auto;
+    margin: 50px auto;
+    margin-right: 180px;
+    padding: 10px 30px 30px 30px;
+    display: flex;
+    flex-direction: column; 
+    border-image: url(./images/blackborder.png) 80 / 30px;
+}
+
+.inputbox{
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    padding: 20px 0 20px 0;
+    align-items: center;
+}
+
+.inputp{
+    font-family: 'Cooper';
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.enterbox{
+    float: left;
+    width: 250px;
+}
+
+.terms{
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+
+.info{
+    font-family: 'Cooper';
+    font-size: 13px;
+}
+
+.detail{
+    font-family: 'Cooper';
+    font-size: 13px;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.detail:hover{
+    cursor: pointer;
+    color: rgb(26 173 255);
+    font-weight: 900;
+}
+
+.sub{
+    margin-top: 15px;
+    margin-left: 180px;
+    border: none;
+    font-family: 'Cooper';
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(233 233 233);
+    cursor: pointer;
+}
+
+.sub:hover{
+    background-color: rgb(26 173 255);
+    color: white;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login page</title>
+</head>
+<body>
+    <header class="head">
+        <h2 class="home">Home</h2>
+    </header>
+    <main>
+        <header class="title">
+            <h1>HackMen don't wanna dead !</h1>
+        </header>
+        <section class="login">
+            <form action="welcome.html" method="post">
+                <fieldset class="logintag">
+                    <legend>Saving the Hackman!</legend>
+                    <div class="forcheck">
+                    <input
+                     id="idbox"
+                     class="box"
+                     type="text"
+                     name="userId"
+                     placeholder="please enter your ID"
+                     onblur="this.placeholder='please enter your ID'"
+                     onfocus="this.placeholder=''"
+                     required 
+                     oninvalid="this.setCustomValidity('Enter User ID Please')"
+                     oninput="boxinput(this.value)"
+                    />
+                    <label class="boxlabel" for="idbox">ID</label>
+                    <img id="idcheck" class="check" src="./images/check.png" alt="check">
+                    </div>
+                    <div class="forcheck">
+                    <input
+                     id="passwordbox"
+                     class="box"
+                     type="password" 
+                     name="userPw" 
+                     placeholder="please enter your Password"
+                     onblur="this.placeholder='please enter your Password'"
+                     onfocus="this.placeholder=''"
+                     required 
+                     oninvalid="this.setCustomValidity('Enter User Password Please')"
+                     oninput="this.setCustomValidity('')"
+                    />
+                    <img id="pwcheck" class="check" src="./images/check.png" alt="check">
+                    <label class="boxlabel" for="passwordbox">Password</label>
+                    </div>
+                    <button class="loginbutton">Login</button>
+                    <p class="forgot">Forgot your <a href="" class="find">username </a>or<a href="" class="find"> password</a>?</p>
+                    <p class="new">New to save HackMen? <a href="./signup.html" class="signup">sign up</a></p>
+                </fieldset>
+            </form>
+        </section>
+        <section class="or"><span class="orspan">or</span></section>
+        <section class="linksection">
+            <p class="agree">By continuing, you agree to the Terms of Service and acknowledge<br>our Privacy Policy.</p>
+            <article class="link google">
+                <img class="icon" src="./images/icon_google.png" alt="google">
+                <a href="https://www.google.com/">Continue with Google</a>
+            </article>
+            <article class="link facebook">
+                <img class="icon" src="./images/icon_facebook.png" alt="facebook">
+                <a href="https://www.facebook.com/">Continue with Facebook</a>
+            </article>
+            <article class="link twitter">
+                <img class="icon" src="./images/icon_twitter.png" alt="twitter">
+                <a href="https://twitter.com/">Continue with Twitter</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="company">
+            <li class="last">© 2022 The hackman die Company</li>
+            <li class="last">Help</li>
+            <li class="last">Contact Us</li>
+        </ul>
+    </footer>
+</body>
+<script type="text/javascript">
+    const idBoxEl = document.querySelector('#idbox');
+    const idcheckEl = document.getElementById('idcheck')
+    idBoxEl.addEventListener('keydown',(el)=>{
+        if(el.key == 'shiftKey' || el.key == 'Enter' || el.key == 'Tab' ){
+            idcheckEl.style.display = "block";
+        }
+        if(idBoxEl.value === ''){
+            idcheckEl.style.display = "none";
+        }
+    })
+    const pwBoxEl = document.querySelector('#passwordbox');
+    const pwcheckEl = document.getElementById('pwcheck')
+    pwBoxEl.addEventListener('keydown',(el)=>{
+        if(el.key == 'shiftKey' || el.key == 'Enter' || el.key == 'Tab' ){
+            pwcheckEl.style.display = "block";
+        }
+        if(pwBoxEl.value === ''){
+            pwcheckEl.style.display = "none";
+        }
+    })
+</script>
+</html>
