@@ -22,11 +22,11 @@ a {
 
 @font-face {
     font-family : 'SSShinb7Regular';
-    src : url(./SSShinb7Regular.ttf)
+    src : url(../SSShinb7Regular.ttf)
   }  
 
 body{
-    background-image: url(./images/welcomehackman.png), url(./images/hackmandead.png);
+    background-image: url(../images/welcomehackman.png), url(../images/hackmandead.png);
     background-position: left 150px top 310px, left 150px top 220px;
     background-size: 20% auto, 20% auto;
     background-repeat: no-repeat, no-repeat;
@@ -38,7 +38,7 @@ h1{
 
 .h1header{
     border-bottom: 5px solid;
-    border-image: url(./images/blackline.png) 20 / 20px;
+    border-image: url(../images/blackline.png) 20 / 20px;
     font-family: SSShinb7Regular;
     text-align: center;
 }
@@ -52,7 +52,7 @@ main{
     padding: 10px 30px 30px 30px;
     display: flex;
     flex-direction: column; 
-    border-image: url(./images/blackborder.png) 80 / 30px;
+    border-image: url(../images/blackborder.png) 80 / 30px;
 }
 
 .inputbox{

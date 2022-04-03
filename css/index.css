@@ -22,18 +22,18 @@ a {
 
 @font-face {
     font-family : 'SSShinb7Regular';
-    src : url(./SSShinb7Regular.ttf)
+    src : url(../SSShinb7Regular.ttf)
   }  
 
 body{
-    background-image: url(./images/hackman.png);
+    background-image: url(../images/hackman.png);
     background-position: left 150px center;
     background-size: 20% auto;
     background-repeat: no-repeat;
 }
 
 .head{
-    background-image: url(./images/hackmandead.png);
+    background-image: url(../images/hackmandead.png);
     padding: 60px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ main{
     padding: 10px 30px 30px 30px;
     display: flex;
     flex-direction: column; 
-    border-image: url(./images/blackborder.png) 80 / 30px;
+    border-image: url(../images/blackborder.png) 80 / 30px;
 }
 
 h1{
@@ -75,7 +75,7 @@ legend{
     width: 330px;
     padding: 30px;
     border: 20px solid;
-    border-image: url(./images/blackborder.png) 80 / 30px;
+    border-image: url(../images/blackborder.png) 80 / 30px;
 }
 
 .forcheck{
@@ -172,7 +172,7 @@ legend{
     top: 25%;
     width: calc(50% - 1em);
     border-bottom: 20px solid;
-    border-image: url(./images/blackline.png) 20 / 20px;
+    border-image: url(../images/blackline.png) 20 / 20px;
 }
 
 .or::after{
@@ -182,7 +182,7 @@ legend{
     top: 20%;
     width: calc(50% - 1em);
     border-bottom: 20px solid;
-    border-image: url(./images/blackline.png) 20 / 20px;
+    border-image: url(../images/blackline.png) 20 / 20px;
 }
 
 .agree{
@@ -198,7 +198,7 @@ legend{
 
 .link{
     border: 30px solid;
-    border-image: url(./images/blackborder.png) 80 / 20px;
+    border-image: url(../images/blackborder.png) 80 / 20px;
     padding: 0 5px 10px 5px;
     margin: 5px 5px 5px 0;
     font-family:'Cooper';
