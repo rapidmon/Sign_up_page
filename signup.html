@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="h1header">
-        <h1>Your way to save the HackMen</h1>
+        <h1>Your way to save the HangMan</h1>
     </header>
     <main>
         <form action="./index.html">
@@ -19,11 +19,11 @@
             </section>
             <section class="inputbox">
                 <p class="inputp">Password</p>
-                <input class="enterbox" type="text" required>
+                <input id="pw" class="enterbox" type="text" required>
             </section>
             <section class="inputbox">
                 <p class="inputp">Confirm Password</p>
-                <input class="enterbox" type="password" required>
+                <input id="pwcheck" class="enterbox" type="password" required>
             </section>
             <section class="inputbox">
                 <p class="inputp">Telephone Number</p>
@@ -60,6 +60,9 @@
         "width=800, height=800, top=50, left=50"
       );
     }
-
+    const pwEl = document.getElementById('pw').value;
+    const pwcheckEl = document.getElementById('pwcheck');
+    console.log(pwEl);
+    console.dir(pwcheckEl);
 </script>
 </html>

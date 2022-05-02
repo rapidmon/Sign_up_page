@@ -26,9 +26,9 @@ a {
   }  
 
 body{
-    background-image: url(../images/welcomehackman.png), url(../images/hackmandead.png);
-    background-position: left 150px top 310px, left 150px top 220px;
-    background-size: 20% auto, 20% auto;
+    background-image: url(../images/welcomehackman.png), url(../images/hangmandead.png);
+    background-position: left 150px top 310px, left 80px top 220px;
+    background-size: 20% auto, 30% auto;
     background-repeat: no-repeat, no-repeat;
 }
 

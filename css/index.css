@@ -33,15 +33,15 @@ body{
 }
 
 .head{
-    background-image: url(../images/hackmandead.png);
-    padding: 60px;
+    background-image: url(../images/hangmandead.png);
+    padding: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .home{
-    color: white;
+    display: none;
 }
 
 main{
